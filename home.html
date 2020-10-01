@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Giovaldi Portfolio</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+<link rel="apple-touch-icon" sizes="180x180" href="https://giovaldir.github.io/gr.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://giovaldir.github.io/gr.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://giovaldir.github.io/gr.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="https://giovaldir.github.io/gr.png" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!---->
+<!---->
+<!---->
+<!---->
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://giovaldir.github.io/pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
+    <link href="https://giovaldir.github.io/pages/assets/lib/remodal/remodal.css" rel="stylesheet">
+    <link href="https://giovaldir.github.io/pages/assets/lib/remodal/remodal-default-theme.css" rel="stylesheet">
+    <link href="https://giovaldir.github.io/pages/assets/css/theme.css" rel="stylesheet">
+    <link href="https://giovaldir.github.io/pages/assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link href="https://giovaldir.github.io/pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131452735-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131452735-1');
+</script>
+
+
+  </head>
+
+
+  <body class="has-sidemenu overflow-hidden-x">
+    <form action="{{ url_for('home') }}" method='POST'>
+
+
+<!--    ===============================================-->
+<!--        Fancynav-->
+<!--    &lt;!&ndash;===============================================&ndash;&gt;-->
+    <nav class="fancynavbar" data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-xs='{"from":{"opacity":1,"y":-48},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+      data-zanim-trigger="scroll" data-exclusive="true">
+      <div class="fancynavbar-togglerbar" data-onscroll-fade-in="data-onscroll-fade-in">
+        <a class="fancynavbar-brand" href="#">
+          <img class="fancynavbar-brand-img" src="https://giovaldir.github.io/pages/assets/img/gr.png" alt="" width="30" height="30" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll"
+          />
+
+          <!--You can use icon or text logo as well-->
+
+
+         </a>
+        <div class="fancynavbar-toggler">
+          <svg class="fancynavbar-toggler-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}' data-zanim-trigger="scroll">
+            <path id="path-top" d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8"></path>
+            <path id="path-middle" d="M20,32h30"></path>
+            <path id="path-bottom" d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0"></path>
+          </svg>
+        </div>
+        <div class="fancynavbar-addon" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll">
+          <a class="fancynavbar-addon-item" href="https://github.com/giovaldir"><span class="fab fa-github"></span></a>
+          <a class="fancynavbar-addon-item" href="https://www.instagram.com/giovaldirch/"><span class="fab fa-instagram"></span></a>
+          <a class="fancynavbar-addon-item" href="https://www.linkedin.com/in/giovaldirch/"></a>
+
+        </div>
+      </div>
+      <div class="fancynavbar-collapse">
+        <ul class="fancynavbar-nav">
+          <li class="fancynav-item fancy-dropdown">
+            <a class="fancynav-link fancy-dropdown-toggle" href="#Expertise"><span class="fancynav-link-content">Expertise</span></a>
+           <li class="fancynav-item fancy-dropdown">
+            <a class="fancynav-link fancy-dropdown-toggle" href="#Resume"><span class="fancynav-link-content">Resume</span></a>
+                </li>
+          <li class="fancynav-item fancy-dropdown">
+            <a class="fancynav-link fancy-dropdown-toggle" href="#Project"><span class="fancynav-link-content">Project</span></a>
+                </li>
+          <li class="fancynav-item fancy-dropdown">
+            <a class="fancynav-link fancy-dropdown-toggle" href="#contact"><span class="fancynav-link-content">Contact</span></a>
+          </li>
+                </div>
+              </div>
+            </div>
+        </ul>
+      </div>
+    </nav>
+    <!--===============================================-->
+    <!--    End of Fancynav-->
+    <!--===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main min-vh-100" id="top">
+
+
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================================-->
+      <!-- End of Preloader ===========================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0" id="split-static">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 px-0 order-lg-2">
+              <div class="sticky-top vh-lg-100 py-9">
+                <div class="bg-holder" style="background-image:url(https://giovaldir.github.io/pages/assets/img/jakarta.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out-slide-left","delay":0.4}'>
+                </div>
+                <!--/.bg-holder-->
+
+              </div>
+            </div>
+            <div class="col-lg-6 bg-white py-6">
+              <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-10" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
+                  <h1 class="font-weight-light text-uppercase fs-2 fs-sm-4 fs-lg-2 fs-xl-4"><span class="d-block overflow-hidden"><span class="d-block mb-1" data-zanim-xs='{"delay":0.1}'>. . . </span></span><span class="d-block overflow-hidden"><span class="d-inline-block" data-zanim-xs='{"delay":0.2}'><span class="display-4 fs-3 fs-sm-5 fs-lg-3 fs-xl-5 font-weight-black">Giovaldi R</span></span>
+                    </span><span class="d-block overflow-hidden"><span class="d-block mt-2" data-zanim-xs='{"delay":0.3}'>Data Scientist</span></span>
+                  </h1>
+
+                  <div data-zanim-xs='{"delay":0.5}'>
+                   <p class="font-weight-bold mb-4">E-mail:<span class="ml-2 font-weight-normal font-italic"><a class="text-700" href="mailto:giovaldi8@gmail.com">giovaldi8@gmail.com</a></span></p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mb-0" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>Data Science enthusiast who just graduated from Purwadhika with an Architecture background and always has a high desire to explore about manipulating data by using data collection, wrangling, analysis, and machine learning modeling techniques to solve challenging business problems with various Programming Languages. Involved in the Python open–source community and passionate about solving various Data Science Projects related to Regression, Classification, Recommender System, Clustering, and Deep Learning. To enhance and develop more skills, collaborating with Bandung.py (Data Science
+community Bandung) and collecting Certificates related to Data seem to be needed to put on this journey.
+</p>
+
+                    <div data-zanim-xs='{"delay":0.5}'>
+                   <p class="font-weight-bold mb-4">Programming Languages:<span class="ml-2 font-weight-normal font-italic"><a class="text-700" href=""></a></span></p>
+                  </div>
+                           <img align="left" alt="Python" width="26px" src="https://raw.githubusercontent.com/rhoit/mode-icons/dump/icons/python.png" />
+             <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+             <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+             <img align="left" alt="SQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
+             <img align="left" alt="MongoDB" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
+             <img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+             <img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+             <img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
+             <img align="left" alt="AWS" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png" />
+           <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+ <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0" id="Expertise">
+
+
+        <div class="container-fluid">
+          <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 mb-5 mb-md-7 text-center">
+              <h2 class="fs-3 fs-sm-4" style="margin-top:10%;"><span class="text-underline">Expertise</span></h2>
+          <div class="row align-items-center py-6 py-md-8 py-lg-0">
+            <div class="col-lg-4 px-lg-5">
+              <div class="media text-sans-serif overflow-hidden" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                <img class="mr-3" src="https://giovaldir.github.io/pages/assets/img/icons/icon-startup.svg" alt="icon" width="45" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' />
+                <div class="media-body">
+                  <div class="overflow-hidden">
+                    <h4 data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Data Analytics</h4>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mb-0" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>Focus on applying analysis and statistical techniques to develop models, understand business problems & provide insights.  Tools : Visual Studio Code, R Studio, Jupyter Lab, Tableau and SQL Workbench.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 px-lg-5 border-lg-left border-lg-right border-300 py-4 py-md-7">
+              <div class="media text-sans-serif overflow-hidden" data-zanim-timeline='{"delay":0.2}' data-zanim-trigger="scroll">
+                <img class="mr-3" src="https://giovaldir.github.io/pages/assets/img/icons/icon-target.svg" alt="icon" width="50" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' />
+                <div class="media-body">
+                  <div class="overflow-hidden">
+                    <h4 data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Machine Learning</h4>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mb-0" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>Focus on using machine learning techniques to improve and deploy models, with an emphasis on research and development. Tools : Visual Studio Code, R Studio, Jupyter Lab.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 px-lg-5">
+              <div class="media text-sans-serif overflow-hidden" data-zanim-timeline='{"delay":0.3}' data-zanim-trigger="scroll">
+                <img class="mr-3" src="https://giovaldir.github.io/pages/assets/img/icons/icon-teamwork.svg" alt="icon" width="50" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' />
+                <div class="media-body">
+                  <div class="overflow-hidden">
+                    <h4 data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Data Warehousing</h4>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mb-0" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>Focus on building data pipelines and working with databases, data warehouses and data platforms. Tools : Visual Studio Code, R Studio, Jupyter Lab, SQL Workbench, AWS </p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+<!-- <section> begin ============================-->
+      <section class="py-0 overflow-hidden" id="landing-banner">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col px-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="position-relative overflow-hidden rounded">
+                <div class="bg-holder overlay parallax rounded" style="background-image:url(https://giovaldir.github.io/pages/assets/img/yogi-misbahudin-24cwh3Z9kaI-unsplash.jpg);" data-rellax-percentage="0.5">
+                </div>
+                <!--/.bg-holder-->
+
+                <div class="position-relative py-11 px-3 px-lg-9">
+                  <h1 class="text-white fs-2 fs-sm-4 fs-md-5 parallax display-4" data-rellax-percentage="0.5" data-rellax-speed="2"><span class="d-block overflow-hidden"><span class="d-inline-block" data-zanim-xs='{"delay":0.1}'>High-Quality Work Produced</span></span><span class="d-block overflow-hidden"><span class="d-inline-block" data-zanim-xs='{"delay":0.2}'>= (Time Spent) x</span></span>
+                    <span
+                      class="d-block overflow-hidden"><span class="d-inline-block" data-zanim-xs='{"delay":0.3}'>(Intensity of Focus)</span></span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+ <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="overflow-hidden bg-light" id="Resume" style="padding-top: 5%;">
+<div class="text-center" >
+              <h1><span class="text-underline">Resume</span></h1>
+            </div>
+<div class="container">
+
+  <div class="row">
+   <div class="col-sm-4">
+    <header class="three columns">
+       <h4><u>Date of Birth</u></h4>
+        <p>
+            <a href="">February 3, 1996</a><br>
+        </p>
+                  <h4><u>Phone</u></h4>
+        <p>
+            <a href="tel:+6282117672525">+6282117672525</a><br>
+        </p>
+        <address>
+            <h4><u>Address</u></h4>
+            <a href="https://www.google.com/maps/place/Jakarta/@-6.2297279,106.6890853,11z/data=!4m5!3m4!1s0x2e69f3e945e34b9d:0x5371bf0fdad786a2!8m2!3d-6.2087634!4d106.845599">
+                Jakarta
+                Indonesia
+            </a>
+        </address>
+        <h4><u>Language Competencies</u></h4>
+        <p>
+            <h5>Bahasa (native)</h5>
+            <h5>English (fluent) TOEFL 510</h5>
+            <h5>Japanese (beginner) JLPT N-5</h5>
+        </p>
+        <h4><u>Programming Skills</u></h4>
+        <header>
+            <h5>Data Science</h5>
+        </header>
+        <p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            &nbsp;&nbsp;<em>HTML5/CSS3 </em>
+            <span>(SCORE : 8.5/10)</span>
+        <p>
+        <p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            &nbsp;&nbsp;<em>Bootstrap </em>
+            <span>(SCORE : 8/10)</span>
+        <p>
+        <p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            &nbsp;&nbsp;<em>Python</em>, <em>R </em>
+            <span>(SCORE : 9/10)</span>
+        <p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            &nbsp;&nbsp;<em>SQL</em> , <em>MongoDB </em>
+            <span>(SCORE : 9/10)</span>
+        </p>
+        <p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+            &nbsp;&nbsp;<em>AWS</em>
+            <span>(learning)</span>
+        <header>
+            <h5>Data Science Libraries</h5>
+                <li>Data Processing and Modeling: SKLearn,Pandas,Numpy,Scipy,XGBoost,Keras,Flask</li>
+                <li>Data Visualization: Matplotlib,Seaborn,Plotly,WordCloud,Folium</li>
+                <li>Data Mining: BeautifulSoup</li>
+        </header>
+        </p>
+        <h4><u>Technical Skills</u></h4>
+        <header>
+            <h5>Machine Learning Supervised & Unsupervised</h5>
+                <li>Regression (Linear, Logistic, Polynomial, Random Forest, XGBoost)</li>
+                <li>Classification (KNN, SVM, Random Forest, XGBoost)</li>
+                <li>Clustering (K-Means)</li>
+                <li>Recommender System (Content Based)</li>
+        </header>
+    </header>
+    <h4><u>Certification & Recommendation</u></h4>
+    <article>
+        <header>
+                <li>Purwadhika Job Connector Result (2020)<a href="https://drive.google.com/file/d/101x798Ga7CO_8203Auz55GmaoZi0Kzx_/view?usp=sharing">[Certificate Link]</a></li>
+                <li>R Programming for Data Science - UDEMY (2020) <a href="https://drive.google.com/file/d/1zc3pewkCPAlqg1exrceH7AK-lALPEcLA/view?usp=sharing">[Certificate Link]</a></li>
+                <li>2020 Complete Python Bootcamp - UDEMY (2020) <a href=" https://drive.google.com/file/d/1lLRqJZyy566rCVngr83a1uRddspI6Lzq/view?usp=sharing">[Certificate Link]</a></li>
+                <li>MySQL for Data Analytics and Business Intelligence - UDEMY (2020) <a href="https://drive.google.com/file/d/13l73joVHs0f4i0TuiLk--g9U9AY9Uu57/view?usp=sharing">[Certificate Link]</a></li>
+                <li>Exchange Student Certificate by Tokyo Institute of Technology (2018)<a href="https://drive.google.com/file/d/1I5qg9oCyP0g3SV09UvOCM3u59LlVVVxQ/view?usp=sharing">[Certificate Link]</a></li>
+                <li>Shinya Hanaoka , Professor Tokyo Institute of Technology (2018)<a href="https://drive.google.com/file/d/1C6o3aCI3o12V3l8OvvO1GPS__TYf1_dn/view?usp=sharing">[Recommendation Link]</a></li>
+                <li>Yadi Triyadi , Site Engineering Manager, PT. PP Persero (2016)<a href="https://drive.google.com/file/d/1QPR5G7wMhGgpH3DH1dImsYtyJ6yuupo9/view?usp=sharing">[Recommendation Link]</a></li>
+                <li>Susila , Manager SCM, PT. Wijaya Karya Persero Tbk (2018-2019)<a href="https://drive.google.com/file/d/1q_mjDTCyIP0VQiFJ9ldtukwI_C40Y-9S/view?usp=sharing">[Recommendation Link]</a></li>
+        </header>
+
+    </article>
+    <h4><u>Data Science Awards & Achievements</u></h4>
+    <article>
+        <header>
+                <li>2nd Runner Up in Purwadhika's Final Project (2020)</li>
+                <li>Finalist of Kaggle Competition (2020)</li>
+        </header>
+
+    </article>
+   </div>
+    <div class="col-sm-8">
+    <div class="thirteen columns clearfix">
+
+    <h4><u>Work Experience</u></h4>
+      <article>
+        <header>
+            <h5>Supply Chain Management Staff (LRT Project)</h5>
+            <span><a href="https://www.wika.co.id">PT Wijaya Karya Persero Tbk</a><time>--2018 to 2019</time></span>
+        </header>
+         <li>Ensure that procurement is carried out in accordance with IRC and donor-specific policies and procedures with the help of BCG team.</li>
+          <li>Procure all necessary items for programs, offices and residences on LRT Project (Kelapa Gading-Velodrome) and Toll Road Serang-Panimbang Project.</li>
+          <li>Ensure that all data materials purchased are of appropriate quality and price and are timely</li>
+          <li>Generate all required procurement documentation and maintain data records and files in an impeccable manner.</li>
+          <li>Prepare payment requests and collect all needed datas to facilitate payment submission.</li>
+          <li>Coordinate with Finance Department (Wika Pusat) to make sure the payments are delivered to the suppliers.</li>
+          <li>Collect needed datas from different departments and site and lease efficiently.</li>
+          <li>Keep good track of suppliers performance and maintain a database of good and reliable suppliers for different categories of supplies, service and goods.</li>
+   </article>
+    <article>
+        <header>
+            <h5>Data Entry Operator (Sensus Ekonomi)</h5>
+            <span><a href="https://www.bps.go.id">Badan Pusat Statistik</a><time>--2016</time></span>
+        </header>
+        <li>Collect SENSUS, verify the accuracy, and sort information based on priorities to prepare source data for computer entry at BPS (West Java)</li>
+        <li>Review data for irrelevant, correct any missing values if possible, and check the output from manual input related to Sensus Data</li>
+        <li>Collect needed datas from different departments and site and lease efficiently.</li>
+        <li>Work with programming techniques and procedures for manipulating data (Microsoft Office)</li>
+        <li>Generate data report, compile completed work in BPS Jawa Barat Area, and perform backup notes for a specific case which hard to handle or need permission</li>
+   </article>
+
+    <h4><u>Education<u></h4>
+    <article>
+        <header>
+            <h5>Studied Architecture in Faculty of Engineering</h5>
+            <span>University of Indonesia(UI)</span>
+            <span><address>Depok , Indonesia</address><time>2014 to 2019</time></span>
+        </header>
+        <p>
+
+        </p>
+    </article>
+    <article>
+        <header>
+            <h5>Exchange Student</h5>
+            <span>Tokyo Institute of Technology(TokyoTech)</span>
+            <span><address>Tokyo , Japan</address><time>2017 to 2018</time></span>
+        </header>
+        <p>
+
+        </p>
+    </article>
+    <article>
+        <header>
+            <h5>Studied Data Science in JCDS Bandung</h5>
+            <span>Purwadhika Digital Technology School</span>
+            <span><address>Bandung , Indonesia</address><time>2020</time></span>
+        </header>
+        <p>
+
+        </p>
+    </article>
+    <article>
+        <header>
+            <h5>Studying Data Science in Information Systems</h5>
+            <span>ITHB (Online Class)</span>
+            <span><address>Bandung , Indonesia</address><time>2020 to Present</time></span>
+        </header>
+        <p>
+
+        </p>
+    </article>
+      <h4><u>Additional Activites & Organization<u></h4>
+    <article>
+        <header>
+            <h5>Member of Data Science Indonesia</h5>
+            <span>Data Science Indonesia community founded and managed by Yayasan Data Science, registered in Kemenkumham as legal entity (Yayasan/Foundation). We was established in May 2015 to champion data-driven technology in the spirit of public-private partnership as well as to engage both technical and non-technical audiences to practice the culture. </span>
+            <span><address>Location : All around Indonesia</address><time>2020 to Present</time></span>
+        </header>
+        <p>
+
+        </p>
+    </article>
+    <article>
+        <header>
+            <h5>New Member of Bandung.py</h5>
+            <span>Data Science community founded and managed by Data Scientists from Bandung since 2019. </span>
+            <span><address>Location : Bandung , Indonesia</address><time>2020 to Present</time></span>
+        </header>
+        <p>
+
+        </p>
+
+
+
+</section>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+<!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-lg-7"  id="Project">
+
+        <div class="container">
+          <div class="row mb-5 mb-lg-7 "style="text-align: center;">
+              <div class="col-12 mb-5 mb-md-7 text-center">
+
+
+              <h1 class="text-underline  d-inline fs-4 fs-md-5">Project</h1>
+              </div>
+
+          </div>
+          <div class="sortable min-vh-100" data-options='{"layoutMode":"packery"}'>
+            <div class="row no-gutters sortable-container sortable-container-gutter-fix" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in"}'>
+                  <img class="w-100" src="https://giovaldir.github.io/pages/assets/img/afif-kusuma-M-QBesExZtk-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">Heart Disease Classification</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/DATA-SCIENCE-PROJECT-HEART-DISEASE">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in"}'>
+                  <img class="w-100" src="https://giovaldir.github.io/pages/assets/img/emil-karlsson-YfjdfsKQBsA-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">Airbnb Price Prediction and Space Recommendation</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/FINAL-PROJECT-TOKYO-AIRBNB">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in"}'>
+                  <img class="w-100" src="https://giovaldir.github.io/pages/assets/img/charles-deluvio--79h5kXs6Mw-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">Clustering Loyalty Members </h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/DATA-SCIENCE-PROJECT-LOYALTY-MEMBERS">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in"}'>
+                  <img class="w-100" src="https://giovaldir.github.io/pages/assets/img/gerold-hinzen-fO58WAxzE68-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">Machinery Image Recognition</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/DATA-SCIENCE-PROJECT-PURWADHIKA-IMAGE-RECOGNITION">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in"}'>
+                  <img class="w-100" src="https://giovaldir.github.io/pages/assets/img/ashkan-forouzani-IRDPRsdozLI-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">Consumer Complaints Analysis</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/DATA-SCIENCE-PROJECT-CONSUMER-COMPLAINTS">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in","delay":0.2}'>
+                  <img class="rounded w-100 fit-cover" src="https://giovaldir.github.io/pages/assets/img/foto-phanatic-5Nw2GwTTvTg-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">NYC Taxi Fare</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/DATA-SCIENCE-PROJECT-NYC-TAXI-FARE">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in","delay":0.2}'>
+                  <img class="w-100 fit-cover" src="https://giovaldir.github.io/pages/assets/img/lasse-moller-AW2iUz42QXM-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">House Price Prediction</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="https://github.com/giovaldir/DATA-SCIENCE-PROJECT-HOUSE-EXAM-2">source code</a>
+                      <a class="btn btn-outline-light btn-xs mt-3" <a class="text-700" href="mailto:giovaldi8@gmail.com">ask question</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 sortable-item p-2 interior">
+                <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in","delay":0.2}'>
+                  <img class="w-100 fit-cover" src="https://giovaldir.github.io/pages/assets/img/mason-pohlman-2ddzatWhs5E-unsplash.jpg" alt="" />
+                  <div class="hoverbox-content bg-dark d-flex align-items-center justify-content-center text-center">
+                    <div class="px-4">
+                      <h5 class="text-white">NLP</h5>
+                      <a class="btn btn-outline-light btn-xs mt-3" href="">coming soon</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="display: none;">
+                <a href="https://giovaldir.github.io/pages/assets/img/gallery/vailgateway-docs.png" data-fancybox="images-preview"
+                   data-width="500" data-height="1000"
+                   data-thumb="https://giovaldir.github.io/pages/assets/img/gallery/vailgateway-docs.png"></a>
+                <a href="https://giovaldir.github.io/pages/assets/img/gallery/vailgateway-reports.png" data-fancybox="images-preview"
+                   data-width="500" data-height="1000"
+                   data-thumb="https://giovaldir.github.io/pages/assets/img/gallery/vailgateway-reports.png"></a>
+
+                <a href="https://giovaldir.github.io/pages/assets/img/gallery/vailgateway-report.png" data-fancybox="images-preview"
+                   data-width="500" data-height="1000"
+                   data-thumb="https://giovaldir.github.io/pages/assets/img/gallery/vailgateway-report.png"></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+    </div>
+ </section>
+              <!-- <section> close ============================-->
+              <!-- ============================================-->
+        <!-- end of .container-->
+<!-- ============================================-->
+      <!-- <section> begin ============================-->
+     <!--  <section class="text-center text-sans-serif" id="clients"> -->
+
+        <div class="container" style="padding-top: 3rem; text-align: center;">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <h3 class="mb-2">Thanks To</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-6">
+            <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
+              <div class="bg-light p-4 p-sm-6 h-100 rounded">
+                <img class="logo-grid" src="https://giovaldir.github.io/pages/assets/img/logo/purwadhika_logo_full.869511f6.png" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
+              <div class="bg-light p-4 p-sm-6 h-100 rounded">
+                <img class="logo-grid" src="https://giovaldir.github.io/pages/assets/img/logo/dsi_logo.png" alt="" data-zanim-xs='{"delay":0.2,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mt-4 mt-md-0">
+              <div class="bg-light p-4 p-sm-6 h-100 rounded">
+                <img class="logo-grid" src="https://giovaldir.github.io/pages/assets/img/logo/udemy-2-logo.png" alt="" data-zanim-xs='{"delay":0.3,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mt-4 mt-lg-0">
+              <div class="bg-light p-4 p-sm-6 h-100 rounded">
+                <img class="logo-grid" src="https://giovaldir.github.io/pages/assets/img/logo/Capture-15.png" alt="" data-zanim-xs='{"delay":0.4,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mt-4">
+              <div class="bg-light p-4 p-sm-6 h-100 rounded">
+                <img class="logo-grid" src="https://giovaldir.github.io/pages/assets/img/logo/youtube_PNG15.png" alt="" data-zanim-xs='{"delay":0.5,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+         <!-- end of .container-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0" id="contact" >
+
+        <div class="container-fluid ">
+          <div class="row">
+
+            <div class="col-lg-12 bg-white pt-8 pb-4 pt-lg-8 text-center" style="padding-top:0px;">
+              <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-8 align-items-center justify-content-center" data-zanim-lg='{"animation":"slide-left","delay":0.6}' data-zanim-trigger="scroll">
+
+                  <h1 class="text-underline d-inline-block mb-4 mb-lg-6 ">Hire Me</h1>
+                  <p class="font-weight-bold mb-4">E-mail:<span class="ml-2 font-weight-normal font-italic"><a class="text-700" href="mailto:giovaldi8@gmail.com">giovaldi8@gmail.com</a></span></p>
+                  <div class="mt-3">
+                    <a class="btn btn-dark btn-sm mr-2" href="https://www.instagram.com/giovaldirch/"><span class="fab fa-instagram" data-fa-transform="grow-6"></span></a>
+                    <a class="btn btn-dark btn-sm" href="https://www.linkedin.com/in/giovaldirch/"><span class="fab fa-linkedin-in" data-fa-transform="grow-6"></span></a>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    <!-- ===============================================-->
+
+
+
+
+    <!--===============================================-->
+    <!--    Footer-->
+    <!--===============================================-->
+    <footer class="footer bg-black text-600 py-4 text-sans-serif text-center overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 order-lg-2">
+            <a class="indicator indicator-up" href="#top" data-fancyscroll="data-fancyscroll"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
+          </div>
+          <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
+            <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
+              Copyright &copy; 2020 Giovaldi RC</p>
+          </div>
+          <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
+            <p class="fs--1 text-uppercase ls font-weight-bold mb-0"><span class=""></span>by
+              <a class="text-600" href="https://github.com/giovaldir">GiovaldiRC</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--===============================================-->
+    <!--    Modal for language selection-->
+    <!--===============================================-->
+    <div class="remodal bg-black remodal-select-language" data-remodal-id="language">
+      <div class="remodal-close" data-remodal-action="close"></div>
+      <ul class="list-unstyled pl-0 my-0 py-4 text-sans-serif">
+        <li>
+          <a class="pt-1 d-block text-white font-weight-semi-bold" href="#">English</a>
+        </li>
+        <li>
+          <a class="pt-1 d-block text-500" href="#">Français</a>
+        </li>
+        <li>
+          <a class="pt-1 d-block text-500" href="page-rtl.html">عربى</a>
+        </li>
+        <li>
+          <a class="pt-1 d-block text-500" href="#">Deutsche</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="https://giovaldir.github.io/pages/assets/js/jquery.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/js/popper.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/js/bootstrap.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/js/plugins.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/loaders.css/loaders.css.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/js/stickyfill.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/remodal/remodal.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/lightbox2/dist/js/lightbox.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/lib/jtap/jquery.tap.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/js/rellax.min.js"></script>
+    <script src="https://giovaldir.github.io/pages/assets/js/theme.js"></script>
+
+  </body>
+
+</html>
